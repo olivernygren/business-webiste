@@ -1,7 +1,8 @@
 :root {
   --clr-cyan: #58AFAC;
   --clr-light-grey: #e6e6e6;
-  --clr-grey: #8d8d8d;
+  --clr-grey: #c4c4c4;
+  --clr-dark-grey: rgb(63, 63, 63);
   --clr-black: black;
   --clr-white: white;
 }
@@ -22,6 +23,13 @@ header {
   justify-content: space-between;
   padding: 0 5rem;
   align-items: center;
+  position: fixed;
+  top: 0rem;
+}
+
+nav {
+  position: fixed;
+  right: 5rem;
 }
 
 nav ul {
@@ -41,9 +49,10 @@ nav a {
   font-weight: 600;
   padding: .75rem 1.25rem;
   transition: 250ms ease-in-out;
+  font-size: .9rem;
 }
 
-nav a:hover {
+.nav-link:hover {
   color: var(--clr-cyan);
 }
 
@@ -51,7 +60,6 @@ nav a:hover {
   background: var(--clr-black);
   color: var(--clr-white);
   transition: 250ms ease-in-out;
-
 }
 
 .nav-btn:hover {
@@ -60,13 +68,13 @@ nav a:hover {
 }
 
 .landing-page {
-  margin-top: -5rem;
   height: fit-content;
   background-image: url(./Images/cyan-bg-w-shapes.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--clr-white);
+  background-attachment: fixed;
   padding: 8rem 5rem 5rem 5rem;
   display: flex;
   flex-direction: column;
@@ -120,6 +128,98 @@ nav a:hover {
 
 
 main {
-  
+  background-color: var(--clr-grey);
+  color: var(--clr-black);
+  padding: 5rem;
 }
 
+main h2 {
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* border-bottom: 15px solid var(--clr-white);
+  width: fit-content; */
+}
+
+.card {
+  background-color: var(--clr-dark-grey);
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.card-1 {
+  margin-bottom: 6rem;
+}
+
+.card h3 {
+  font-size: 2.25rem;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.card p {
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.card-2 p {
+  margin-bottom: 2.5rem;
+}
+
+.card-1 .card-text {
+  padding: 3rem 3rem 3rem 6rem;
+  text-align: right;
+  width: 70%;
+  height: 100%;
+  color: var(--clr-white);
+}
+
+.card-2 .card-text {
+  padding: 3rem 6rem 3rem 3rem;
+  text-align: left;
+  width: 70%;
+  height: 100%;
+  color: var(--clr-white);
+}
+
+.card .card-image {
+  background-color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+
+.card img {
+  width: 60%;
+  box-shadow: 8px 8px 0px var(--clr-cyan);
+  transition: 250ms ease-in-out;
+}
+
+.card img:hover {
+  box-shadow: 12px 12px 0px var(--clr-cyan);
+}
+
+.border-btn {
+  background-color: transparent;
+  color: var(--clr-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: 3px solid var(--clr-white);
+  padding: .6rem 1rem;
+  transition: 250ms ease-in-out;
+}
+
+.border-btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-black);
+}
