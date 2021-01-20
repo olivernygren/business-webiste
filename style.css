@@ -1,6 +1,6 @@
 :root {
-  --clr-cyan: #58AFAC;
-  --clr-light-grey: #e6e6e6;
+  --clr-orange: #E99629;
+  --clr-light-grey: #DCDCDC;
   --clr-grey: #c4c4c4;
   --clr-dark-grey: rgb(63, 63, 63);
   --clr-black: black;
@@ -15,6 +15,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: var(--clr-light-grey);
 }
 
 header {
@@ -25,6 +26,11 @@ header {
   align-items: center;
   position: fixed;
   top: 0rem;
+}
+
+.logo {
+  width: 7rem;
+  padding: 1.25rem 0;
 }
 
 nav {
@@ -38,7 +44,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 .5rem;
+  margin: 0 .3rem;
   text-transform: uppercase;
 }
 
@@ -53,7 +59,7 @@ nav a {
 }
 
 .nav-link:hover {
-  color: var(--clr-cyan);
+  color: var(--clr-orange);
 }
 
 .nav-btn {
@@ -69,9 +75,9 @@ nav a {
 
 .landing-page {
   height: fit-content;
-  background-image: url(./Images/cyan-bg-w-shapes.png);
+  background-image: url(./Images/background-with-text.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-color: var(--clr-white);
   background-attachment: fixed;
@@ -82,14 +88,21 @@ nav a {
 
 .landing-page h1 {
   font-size: 3rem;
-  width: 60%;
+  width: 70%;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.118);
+}
+
+.landing-page h1 i {
+  color: var(--clr-orange);
+  font-weight: 800;
 }
 
 .landing-page-buttons {
   margin-top: 2rem;
 }
 
-.cyan-btn, .black-btn {
+.orange-btn, .black-btn {
   color: var(--clr-white);
   padding: 1rem 1.5rem;
   box-shadow: 4px 4px 0px var(--clr-light-grey);
@@ -100,8 +113,8 @@ nav a {
   transition: 250ms ease-in-out;
 }
 
-.cyan-btn {
-  background-color: var(--clr-cyan);
+.orange-btn {
+  background-color: var(--clr-orange);
   margin-right: 3rem;
 }
 
@@ -109,8 +122,8 @@ nav a {
   background-color: var(--clr-black);
 }
 
-.cyan-btn:hover {
-  background-color: rgb(124, 196, 196);
+.orange-btn:hover {
+  background-color: rgb(199, 129, 0);
   box-shadow: 6px 6px 0px var(--clr-grey);
 }
 
@@ -128,82 +141,91 @@ nav a {
 
 
 main {
-  background-color: var(--clr-grey);
+  background-color: var(--clr-light-grey);
   color: var(--clr-black);
-  padding: 5rem;
+  padding: 2rem 5rem 5rem 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 main h2 {
   text-align: center;
-  margin: 3rem auto;
+  margin: 0 auto 3rem auto;
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  /* border-bottom: 15px solid var(--clr-white);
-  width: fit-content; */
+}
+
+main h2 b {
+  color: #E99629;
+  font-weight: 800;
+}
+
+.orange-divider {
+  margin: 5rem 0 0 4rem;
 }
 
 .card {
-  background-color: var(--clr-dark-grey);
+  width: 90%;
+  max-width: 1200px;
+  height: fit-content;
+  background-color: var(--clr-white);
   display: flex;
   align-items: center;
-  max-width: 1200px;
+  margin-bottom: 6rem;
+  /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.152); */
 }
 
-.card-1 {
-  margin-bottom: 6rem;
+.card-text {
+  background-color: var(--clr-dark-grey);
+  height: inherit;
+  /* width: 70%; */
+  color: var(--clr-white);
 }
 
 .card h3 {
   font-size: 2.25rem;
   letter-spacing: 3px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .card p {
   line-height: 1.75rem;
   letter-spacing: 1px;
   font-weight: 300;
-}
-
-.card-2 p {
   margin-bottom: 2.5rem;
 }
 
 .card-1 .card-text {
-  padding: 3rem 3rem 3rem 6rem;
+  padding: 6rem 3rem 6rem 6rem;
   text-align: right;
-  width: 70%;
-  height: 100%;
-  color: var(--clr-white);
 }
 
 .card-2 .card-text {
-  padding: 3rem 6rem 3rem 3rem;
+  padding: 6rem 6rem 6rem 3rem;
   text-align: left;
-  width: 70%;
-  height: 100%;
-  color: var(--clr-white);
 }
 
-.card .card-image {
+.card-image {
   background-color: var(--clr-white);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
+  width: 100%;
 }
-
 
 .card img {
   width: 60%;
-  box-shadow: 8px 8px 0px var(--clr-cyan);
+  box-shadow: 8px 8px 0px var(--clr-orange);
   transition: 250ms ease-in-out;
 }
 
 .card img:hover {
-  box-shadow: 12px 12px 0px var(--clr-cyan);
+  box-shadow: 12px 12px 0px var(--clr-orange);
 }
 
 .border-btn {
@@ -222,4 +244,124 @@ main h2 {
 .border-btn:hover {
   background-color: var(--clr-white);
   color: var(--clr-black);
+}
+
+
+
+
+
+
+.get-to-know-us {
+  width: 90%;
+  max-width: 1200px;
+  background-color: var(--clr-dark-grey);
+  padding: 3rem 8rem;
+  color: var(--clr-white);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.152); */
+  flex-direction: column;
+}
+
+.get-to-know-us-text {
+  margin-bottom: 2rem;
+}
+
+.get-to-know-us-text h3 {
+  margin-block-start: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.get-to-know-us-text p {
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+.h2-2nd {
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  text-transform: none;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.sub-header {
+  color: var(--clr-dark-grey);
+  font-weight: 600;
+  margin-bottom: 4rem;
+  font-size: 2.25em;
+  margin-block-start: 0;
+  letter-spacing: 2px;
+}
+
+.sub-header b {
+  color: var(--clr-orange);
+}
+
+.big-button-section {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.big-btn {
+  padding: 1.75rem 3rem;
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 250ms ease-in-out;
+}
+
+.big-btn:hover {
+  background-color: var(--clr-dark-grey);
+  box-shadow: 6px 6px 0px var(--clr-grey);
+}
+
+
+
+
+
+.footer-curve {
+  margin-bottom: -1rem;
+}
+
+.white-divider {
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  background-color: black;
+  margin-top: 0;
+  color: var(--clr-white);
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.footer-section {
+  margin: 0 7.5rem 3rem 7.5rem;
+}
+
+footer h5 {
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+footer p {
+  letter-spacing: 2px;
 }
