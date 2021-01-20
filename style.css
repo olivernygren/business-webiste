@@ -160,6 +160,7 @@ main h2 {
 main h2 b {
   color: #E99629;
   font-weight: 800;
+  text-shadow: 4px 4px 0px var(--clr-grey);
 }
 
 .orange-divider {
@@ -304,6 +305,7 @@ main h2 b {
 
 .sub-header b {
   color: var(--clr-orange);
+  text-shadow: 4px 4px 0px var(--clr-grey);
 }
 
 .big-button-section {
