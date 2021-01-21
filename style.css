@@ -22,21 +22,24 @@ header {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem;
+  /* padding: 0 5rem; */
   align-items: center;
-  position: fixed;
-  top: 0rem;
+  /* position: fixed;
+  top: 0rem; */
   height: 5rem;
+  /* width: 100%; */
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .logo {
-  width: 7rem;
+  width: 9rem;
   padding: 1.25rem 0;
 }
 
 nav {
-  position: fixed;
-  right: 5rem;
+  /* position: fixed;
+  right: 5rem; */
 }
 
 nav ul {
@@ -59,6 +62,10 @@ nav a {
   font-size: .9rem;
 }
 
+/* .nav-link:nth-of-type(4) {
+  margin-right: .625rem;
+} */
+
 .nav-link:hover {
   color: var(--clr-orange);
 }
@@ -74,6 +81,14 @@ nav a {
   box-shadow: 6px 6px 0px var(--clr-grey);
 }
 
+.landing-page-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0 0 0;
+}
+
 .landing-page {
   height: fit-content;
   background-image: url(./Images/background-with-text.png);
@@ -82,19 +97,20 @@ nav a {
   background-repeat: no-repeat;
   background-color: var(--clr-white);
   background-attachment: fixed;
-  padding: 8rem 5rem 5rem 5rem;
-  display: flex;
-  flex-direction: column;
+  padding: 0rem 5rem 5rem 5rem;
+
+  /* width: 100vw;
+  margin: 0; */
 }
 
-.landing-page h1 {
+.landing-page-content h1 {
   font-size: 3rem;
   width: 70%;
   letter-spacing: 4px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.118);
 }
 
-.landing-page h1 i {
+.landing-page-content h1 i {
   color: var(--clr-orange);
   font-weight: 800;
 }
@@ -133,7 +149,7 @@ nav a {
   box-shadow: 6px 6px 0px var(--clr-grey);
 }
 
-.landing-page img {
+.landing-page-content img {
   width: 3rem;
   margin-top: 5rem;
 }
@@ -257,13 +273,15 @@ main h2 b {
   width: 90%;
   max-width: 1200px;
   background-color: var(--clr-dark-grey);
-  padding: 3rem 8rem;
+  padding: 3.5rem 8.5rem;
   color: var(--clr-white);
   text-align: center;
   align-items: center;
   display: flex;
   /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.152); */
   flex-direction: column;
+  outline: 2px solid white;
+  outline-offset: -16px;
 }
 
 .get-to-know-us-text {
@@ -279,6 +297,22 @@ main h2 b {
 
 .get-to-know-us-text p {
   letter-spacing: 1px;
+}
+
+.white-btn {
+  background-color: var(--clr-white);
+  color: var(--clr-dark-grey);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: .7rem 1.25rem;
+  transition: 250ms ease-in-out;
+}
+
+.white-btn:hover {
+  background-color: var(--clr-light-grey);
 }
 
 
@@ -361,7 +395,7 @@ footer {
 
 footer h5 {
   font-size: 1.1rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
