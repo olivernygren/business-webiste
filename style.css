@@ -37,11 +37,6 @@ header {
   padding: 1.25rem 0;
 }
 
-nav {
-  /* position: fixed;
-  right: 5rem; */
-}
-
 nav ul {
   display: flex;
   list-style-type: none;
@@ -62,9 +57,9 @@ nav a {
   font-size: .9rem;
 }
 
-/* .nav-link:nth-of-type(4) {
+.nav-link:last-of-type {
   margin-right: .625rem;
-} */
+}
 
 .nav-link:hover {
   color: var(--clr-orange);
@@ -107,7 +102,7 @@ nav a {
   font-size: 3rem;
   width: 70%;
   letter-spacing: 4px;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.118);
+  /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.118); */
 }
 
 .landing-page-content h1 i {
