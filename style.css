@@ -26,6 +26,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0rem;
+  height: 5rem;
 }
 
 .logo {
