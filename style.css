@@ -18,6 +18,23 @@ body, html {
   background-color: var(--clr-light-grey);
 }
 
+.under-construction {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.under-construction h2 {
+  color: white;
+}
+
 header {
   background-color: transparent;
   display: flex;
