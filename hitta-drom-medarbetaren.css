@@ -1,0 +1,169 @@
+:root {
+  --clr-orange: #E99629;
+  --clr-light-grey: #DCDCDC;
+  --clr-grey: #dcdcdc;
+  --clr-dark-grey: rgb(63, 63, 63);
+  --clr-black: black;
+  --clr-white: white;
+}
+
+/* #region p2 landing page */
+
+header b {
+  font-weight: 800;
+}
+
+.p2-landing-page {
+  height: fit-content;
+  padding: 0rem 5rem 1rem 5rem;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(0deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.p2-landing-page .container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.p2-landing-page-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5rem 0 1rem 0;
+  margin: auto;
+}
+
+.p2-landing-page-content h1 {
+  font-size: 2.75rem;
+  line-height: 5rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.p2-landing-page-content h1 b {
+  font-weight: 800;
+  color: var(--clr-orange);
+  text-shadow: 4px 4px 0px var(--clr-grey);
+}
+
+.p2-landing-page-content h4 {
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 2px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.p2-landing-page-content .image {
+  display: flex;
+  justify-content: center;
+}
+
+.p2-landing-page-content img {
+  width: 20rem;
+}
+
+/* #endregion */
+
+/* #region p2 section dark */
+
+.p2-dark {
+  background: var(--clr-dark-grey);
+  margin-top: 6rem;
+}
+
+.p2-dark .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6rem 5rem;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+}
+
+.p2-dark .text {
+  padding-right: 5rem;
+}
+
+.p2-dark .image img {
+  width: 24rem;
+}
+
+.p2-dark .text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.p2-dark .text h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.p2-dark .text .bottom {
+  margin-bottom: 2.5rem;
+}
+
+/* #endregion */
+
+/* #region p2 light */
+
+.p2-light {
+  background: var(--clr-white);
+}
+
+.p2-light .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6rem 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.p2-light .text {
+  padding-left: 5rem;
+  text-align: right;
+}
+
+.p2-light .image img {
+  width: 24rem;
+}
+
+.p2-light .text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.p2-light .text h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.p2-light .text .bottom {
+  margin-bottom: 2.5rem;
+}
+
+.p2-light .border-btn {
+  color: var(--clr-black);
+  border-color: var(--clr-black);
+}
+
+.p2-light .border-btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+/* #endregion */
+
+/* #region last cta */
+
+.big-button-section {
+  margin-bottom: 6rem;
+  background: var(--clr-light-grey);
+}
+
+/* #endregion */

@@ -9,6 +9,10 @@
 
 /* #region p1 landing page */
 
+header b {
+  font-weight: 800;
+}
+
 .p1-landing-page {
   height: fit-content;
   padding: 0rem 5rem 1rem 5rem;
@@ -28,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4.5rem 1rem;
+  padding: 4.5rem 0;
   /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.118); */
 }
 
