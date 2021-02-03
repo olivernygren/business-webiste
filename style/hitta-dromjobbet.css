@@ -1,0 +1,169 @@
+:root {
+  --clr-orange: #E99629;
+  --clr-light-grey: #DCDCDC;
+  --clr-grey: #dcdcdc;
+  --clr-dark-grey: rgb(63, 63, 63);
+  --clr-black: black;
+  --clr-white: white;
+}
+
+/* #region p3 landing page */
+
+header b {
+  font-weight: 800;
+}
+
+.p3-landing-page {
+  height: fit-content;
+  padding: 0rem 5rem 1rem 5rem;
+  width: 100vw;
+  margin: 0;
+  background: linear-gradient(0deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.p3-landing-page .container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.p3-landing-page-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5rem 0 1rem 0;
+  margin: auto;
+}
+
+.p3-landing-page-content h1 {
+  font-size: 3.5rem;
+  line-height: 5rem;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.p3-landing-page-content h1 b {
+  font-weight: 800;
+  color: var(--clr-orange);
+  text-shadow: 4px 4px 0px var(--clr-grey);
+}
+
+.p3-landing-page-content h4 {
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 2px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.p3-landing-page-content .image {
+  display: flex;
+  justify-content: center;
+}
+
+.p3-landing-page-content img {
+  width: 20rem;
+}
+
+/* #endregion */
+
+/* #region p3 section dark */
+
+.p3-dark {
+  background: var(--clr-dark-grey);
+  margin-top: 6rem;
+}
+
+.p3-dark .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6rem 5rem;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+}
+
+.p3-dark .text {
+  padding-right: 5rem;
+}
+
+.p3-dark .image img {
+  width: 24rem;
+}
+
+.p3-dark .text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.p3-dark .text h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.p3-dark .text .bottom {
+  margin-bottom: 2.5rem;
+}
+
+/* #endregion */
+
+/* #region p3 light */
+
+.p3-light {
+  background: var(--clr-white);
+}
+
+.p3-light .container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 6rem 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.p3-light .text {
+  padding-left: 5rem;
+  text-align: right;
+}
+
+.p3-light .image img {
+  width: 24rem;
+}
+
+.p3-light .text h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.p3-light .text h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.p3-light .text .bottom {
+  margin-bottom: 2.5rem;
+}
+
+.p3-light .border-btn {
+  color: var(--clr-black);
+  border-color: var(--clr-black);
+}
+
+.p3-light .border-btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+/* #endregion */
+
+/* #region last cta */
+
+.big-button-section {
+  margin-bottom: 6rem;
+  background: var(--clr-light-grey);
+}
+
+/* #endregion */
