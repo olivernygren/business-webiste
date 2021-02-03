@@ -112,7 +112,7 @@ nav a {
 
 .landing-page {
   height: fit-content;
-  background-image: url(./Images/background-with-text.png);
+  background-image: url(/Images/background-with-text.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
