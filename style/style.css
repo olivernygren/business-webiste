@@ -338,10 +338,6 @@ main h2 b {
   transition: 250ms ease-in-out;
 }
 
-.hide-btn {
-  margin-left: 1.5rem;
-}
-
 .white-btn:hover {
   background-color: var(--clr-light-grey);
 }
@@ -450,12 +446,6 @@ footer p {
   }
 }
 
-@media (min-width: 1226px) {
-  .hide-btn {
-    display: none;
-  }
-}
-
 @media (max-width: 1225px) {
   .hide-link {
     display: none;
@@ -469,18 +459,15 @@ footer p {
     padding: 5rem;
   }
 
-  .card, .card-image {
-    background: var(--clr-dark-grey);
+  .card-image {
+    display: none;
   }
 
-  .card img {
-    width: 100%;
-    box-shadow: none;
-    padding: 0 3rem;
-  }
-
-  .card-1 .card-text {
-    padding: 4rem 3rem 4rem 4rem;
+  .card-1 .card-text, .card-2 .card-text {
+    padding: 4rem 5rem;
+    text-align: center;
+    outline: 2px solid white;
+    outline-offset: -16px;
   }
   
   .card-2 .card-text {
