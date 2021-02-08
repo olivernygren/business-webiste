@@ -39,21 +39,39 @@ body, html {
 /* #region header */
 
 header {
+  background: rgb(170, 170, 170);
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.316); */
+}
+
+.logo {
+  width: 9rem;
+}
+
+.nav-container {
+  background: white;
+  height: 100%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/*header {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  /* padding: 0 5rem; */
   align-items: center;
-  /* position: fixed;
-  top: 0rem; */
   height: 5rem;
-  /* width: 100%; */
 }
 
 .logo {
   width: 9rem;
   padding: 1.25rem 0;
-}
+}  */
 
 nav ul {
   display: flex;
@@ -100,7 +118,7 @@ nav a {
 
 .landing-page .container {
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
 }
 
 .landing-page-content {
@@ -425,3 +443,8 @@ footer p {
 }
 
 /* #endregion */
+
+
+@media (max-width: 1500px) {
+
+}
