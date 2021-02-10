@@ -102,6 +102,88 @@ nav a {
 
 /* #endregion */
 
+/* #region mobile-menu */
+
+.hamburger-menu {
+  width: 20px;
+  height: 24px;
+  position: fixed;
+  top: 28px;
+  right: 5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 100000;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 800ms;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-6px, 5.5px);
+  background: white;
+}
+
+.change .line-2 {
+  opacity: 0;
+  background: white;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-6px, -5.5px);
+  background: white;
+}
+
+.mobile-nav {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--clr-dark-grey);
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 20% 0 0 60%; */
+  transition: right 800ms cubic-bezier(1, 0, 0, 1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  font-weight: 500;
+  z-index: 50000;
+}
+
+.change {
+  right: 0;
+}
+
+.mobile-nav ul {
+  text-align: right;
+}
+
+.mobile-nav li {
+  list-style: none;
+  margin: 1rem;
+}
+
+.mobile-nav ul {
+  flex-direction: column;
+}
+
+.mobile-nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  padding: 1rem;
+  color: white;
+}
+
+/* #endregion */
+
 /* #region landing page */
 
 .landing-page .container {
@@ -220,13 +302,11 @@ main h2 b {
   display: flex;
   align-items: center;
   margin-bottom: 6rem;
-  /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.152); */
 }
 
 .card-text {
   background-color: var(--clr-dark-grey);
   height: inherit;
-  /* width: 70%; */
   color: var(--clr-white);
 }
 
@@ -234,7 +314,7 @@ main h2 b {
   font-size: 2.25rem;
   letter-spacing: 3px;
   margin: 0;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .card p {
@@ -315,8 +395,14 @@ main h2 b {
   margin-bottom: 2rem;
 }
 
+.get-to-know-us-text img {
+  width: 8rem;
+  margin: 1rem 0;
+}
+
 .get-to-know-us-text h3 {
   margin-block-start: 0;
+  margin-block-end: 0.5rem;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -472,5 +558,196 @@ footer p {
   
   .card-2 .card-text {
     padding: 4rem 4rem 4rem 3rem;
+    background-color: var(--clr-white);
+    color: black;
+    outline-color: black;
+  }
+
+  .card p {
+    font-weight: 400;
+  }
+
+  .card-2 .border-btn {
+    border-color: black;
+    color: black;
+  }
+
+  .card-2 .border-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .get-to-know-us {
+    padding: 4rem 4rem 4rem 3rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .landing-page-content h1 {
+    text-align: center;
+    width: 90%;
+    font-size: 2.75rem;
+    margin: 1rem auto;
+  }
+
+  .landing-page-buttons {
+    margin: 4rem auto 1rem auto;
+  }
+
+  .landing-page-content img {
+    margin: 5rem auto 0 auto;
+  }
+
+  main {
+    padding: 5rem 3rem;
+  }
+
+  .footer-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 820px) {
+
+  .orange-divider {
+    display: none;
+  }
+
+  .white-divider {
+    opacity: 0;  
+  }
+
+  .landing-page-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orange-btn {
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+  }
+
+  .landing-page-content img {
+    margin-top: 3rem;
+  }
+
+  .h2-2nd {
+    font-size: 2.5rem;
+  }
+
+  .sub-header {
+    font-size: 1.75rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .landing-page {
+    padding: 5rem 2rem;
+  }
+
+  .nav-container {
+    padding: 0 3rem;
+  }
+
+  .hamburger-menu {
+    right: 3rem;
+  }
+
+  .card-1 .card-text, .card-2 .card-text {
+    padding: 4rem 2rem;
+    outline: none;
+  }
+
+  main {
+    padding: 5rem 1rem;
+  }
+
+  .get-to-know-us {
+    outline: none;
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+
+  .get-to-know-us h3 {
+    text-transform: none;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .card h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .landing-page-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .landing-page-buttons {
+    margin-top: 2rem;
+  }
+
+  .landing-page {
+    padding: 5rem 2rem 3rem 2rem
+  }
+}
+
+@media (max-width: 460px) {
+  .nav-container {
+    padding: 2rem;
+  }
+
+  .hamburger-menu {
+    right: 2rem;
+  }
+
+  .landing-page {
+    padding: 5rem 1.5rem 3rem 1.5rem
+  }
+
+  .black-btn {
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 0 2rem 3rem 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .landing-page-content {
+    padding-top: 1rem;
+  }
+
+  .landing-page-content h1 {
+    font-size:  2rem;
+  }
+
+  .orange-btn, .black-btn {
+    font-size: .8rem;
+    padding: .75rem .1.25rem
+  }
+
+  .get-to-know-us, .card-1 .card-text, .card-2 .card-text {
+    padding: 4rem 1.5rem;
   }
 }

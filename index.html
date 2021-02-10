@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="./style/style.css">
   <script defer src="./script/script.js"></script>
   <script defer src="./script/header-handler.js"></script>
+  <script defer src="./script/mobile-menu-close.js"></script>
+  <script defer src="./script/hamburger-menu.js"></script>
   <title>D.E & P - Rekrytering och Bemanning</title>
 </head>
 
@@ -22,7 +24,7 @@
   <header id="header">
     <div class="nav-container">
       <a href="./index.html"><img class="logo" src="./Logos/dep-logo.svg" alt="logo"></a>
-      <nav>
+      <nav class="desktop-nav">
         <ul>
           <li class="hide-link"><a href="./varfor-dep.html" class="nav-link">Varför D.E & P</a></li>
           <li><a href="./hitta-drom-medarbetaren.html" class="nav-link">För Företag</a></li>
@@ -31,6 +33,21 @@
           <li class="hide-link"><a href="./kontakt.html" class="nav-btn">Kontakt</a></li>
         </ul>
       </nav>
+
+      <nav class="mobile-nav">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul>
+          <li><a href="./varfor-dep.html" class="mobile-nav-link">Varför D.E & P</a></li>
+          <li><a href="./hitta-drom-medarbetaren.html" class="mobile-nav-link">För Företag</a></li>
+          <li><a href="./hitta-dromjobbet.html" class="mobile-nav-link">För Jobbsökare</a></li>
+          <li><a href="./om-oss.html" class="mobile-nav-link">Om Oss</a></li>
+          <li><a href="./kontakt.html" class="mobile-nav-link">Kontakt</a></li>
+        </ul>
+      </nav> 
     </div>
   </header>
 
@@ -74,7 +91,7 @@
         <img src="./Images/image-2.jpg" alt="Picture of a screen and a keyboard on a desk">
       </div>
       <div class="card-text">
-        <h3>Hitta drömmedarbetaren</h3>
+        <h3>Hitta dröm-medarbetaren</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore est culpa odio vitae optio soluta molestias sit ipsa. Repudiandae, natus? Numquam, consequatur laborum?</p>
         <a href="#" class="border-btn">Läs Mer</a>
       </div>
@@ -82,7 +99,8 @@
 
     <div class="get-to-know-us">
       <div class="get-to-know-us-text">
-        <h3>Lär Känna Oss</h3>
+        <h3>Lär känna oss</h3> 
+        <img src="./Logos/logo-symbol.svg" alt="Logo"> 
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita hic, itaque iste numquam ipsam non accusantium? Vel at ea consectetur cumque iure. Assumenda nobis, qui exercitationem iusto commodi distinctio adipisci!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita hic, itaque iste numquam ipsam non accusantium? Vel at ea consectetur cumque iure. Assumenda nobis, qui exercitationem iusto commodi distinctio adipisci!</p>
       </div>
