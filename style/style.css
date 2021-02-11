@@ -663,6 +663,16 @@ footer a[href^="tel"] {
   }
 }
 
+@media (max-width: 660px) {
+  .heading {
+    flex-direction: column;
+  }
+
+  .get-to-know-us-text img {
+    margin: .75rem 0;
+  }
+}
+
 @media (max-width: 610px) {
   .landing-page {
     padding: 5rem 2rem;
