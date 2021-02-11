@@ -9,23 +9,40 @@
   <!-- Poppins Font --> <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/hitta-drom-medarbetaren.css">
-  <script defer src="./script/script.js"></script>
+  <script defer src="./script/header-handler.js"></script>
+  <script defer src="./script/mobile-menu-close.js"></script>
+  <script defer src="./script/hamburger-menu.js"></script>
   <title>Hitta nästa dröm-medarbetare hos oss | D.E & P</title>
 </head>
 <body>
 
-  <header>
+  <header id="header">
     <div class="nav-container">
       <a href="./index.html"><img class="logo" src="./Logos/dep-logo.svg" alt="logo"></a>
-      <nav>
+      <nav class="desktop-nav">
         <ul>
-          <li><a href="./varfor-dep.html" class="nav-link">Varför D.E & P</a></li>
+          <li class="hide-link"><a href="./varfor-dep.html" class="nav-link">Varför D.E & P</a></li>
           <li><a href="./hitta-drom-medarbetaren.html" class="nav-link"> <b>För Företag</b> </a></li>
           <li><a href="./hitta-dromjobbet.html" class="nav-link">För Jobbsökare</a></li>
           <li><a href="./om-oss.html" class="nav-link">Om Oss</a></li>
-          <li><a href="./kontakt.html" class="nav-btn">Kontakt</a></li>
+          <li class="hide-link"><a href="./kontakt.html" class="nav-btn">Kontakt</a></li>
         </ul>
       </nav>
+
+      <nav class="mobile-nav">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul>
+          <li><a href="./varfor-dep.html" class="mobile-nav-link">Varför D.E & P</a></li>
+          <li><a href="./hitta-drom-medarbetaren.html" class="mobile-nav-link">För Företag</a></li>
+          <li><a href="./hitta-dromjobbet.html" class="mobile-nav-link">För Jobbsökare</a></li>
+          <li><a href="./om-oss.html" class="mobile-nav-link">Om Oss</a></li>
+          <li><a href="./kontakt.html" class="mobile-nav-link">Kontakt</a></li>
+        </ul>
+      </nav> 
     </div>
   </header>
 

@@ -240,21 +240,19 @@ nav a {
 }
 
 .orange-btn {
-  background-color: var(--clr-orange);
+  background: linear-gradient(330deg, rgba(255,185,43,1) 0%, rgba(233,150,41,1) 100%);
   margin-right: 3rem;
 }
 
 .black-btn {
-  background-color: var(--clr-black);
+  background: linear-gradient(330deg, rgba(60,60,60,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .orange-btn:hover {
-  background-color: rgb(199, 129, 0);
   box-shadow: 6px 6px 0px var(--clr-grey);
 }
 
 .black-btn:hover {
-  background-color: rgb(53, 53, 53);
   box-shadow: 6px 6px 0px var(--clr-grey);
 }
 
