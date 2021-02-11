@@ -218,3 +218,58 @@ header b {
 } */
 
 /* #endregion */
+
+/* #region media queries */
+
+@media (max-width: 1000px) {
+  .p5-landing-page-content img {
+    width: 16rem;
+  }
+
+  .p5-dark .image img {
+    width: 20rem;
+  }
+
+  .p5-dark .text {
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .p5-landing-page-content {
+    flex-direction: column;
+    padding: 4.5rem 0;
+    text-align: center;
+  }
+
+  .p5-landing-page-content img {
+    margin-top: 3rem;
+  }
+
+  .p5-dark .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .p5-dark .text {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .p5-dark .container {
+    padding: 4rem 2rem;
+  }
+
+  .p5-landing-page {
+    padding: 5rem 3rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .p5-dark .image img {
+    width: 16rem;
+  }
+}
+
+/* #endregion */

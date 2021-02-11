@@ -164,6 +164,134 @@ header b {
 .big-button-section {
   margin-bottom: 6rem;
   background: var(--clr-light-grey);
+  padding: 0 2rem;
+}
+
+/* #endregion */
+
+/* #region media queries */
+
+@media (min-width: 1500px) {
+  .p3-landing-page-content {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 1175px) {
+  .p3-landing-page-content img {
+    width: 15rem;
+  }
+
+  .p3-dark .image img, .p3-light .image img {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 1010px) {
+
+  .p3-landing-page-content {
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+
+  .p3-landing-page-content img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .p3-dark .container, .p3-light .container {
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding: 5rem 4rem 4rem 4rem;
+  }
+
+  .p3-dark .text {
+    padding-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .p3-light .text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .p3-light .image img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .p3-landing-page-content {
+    padding: 4rem 0;
+  }
+
+  .p3-landing-page-content h1 {
+    font-size: 2.75rem;
+    display: inline-block;
+    word-wrap: break-all;
+    line-height: unset;
+  }
+
+  .p3-dark .container {
+    padding: 4rem 3rem 3rem 3rem;
+  } 
+
+  .p3-light .container {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .p3-landing-page {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .p3-landing-page-content {
+    padding: 4rem 0rem 1rem 0;
+  }
+
+  .p3-landing-page-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .p3-light .border-btn, .p3-dark .border-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .p3-landing-page {
+    padding: 4rem 3rem 1rem 3rem;
+  }
+  
+  .p3-landing-page-content {
+    padding: 2.5rem 0;
+  }
+  
+  .p3-landing-page-content h1 {
+    font-size: 2.75rem;
+    line-height: unset;
+  }
+
+  .h2-2nd {
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.25rem;
+  }
+
+  .p3-light .container, .p3-dark .container {
+    padding: 4rem 2rem;
+  }
 }
 
 /* #endregion */

@@ -514,6 +514,11 @@ footer p {
   letter-spacing: 2px;
 }
 
+footer a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* #endregion */
 
 /* FIRST PAGE MEDIA QUERIES */
@@ -743,7 +748,7 @@ footer p {
 
   .orange-btn, .black-btn {
     font-size: .8rem;
-    padding: .75rem .1.25rem
+    padding: .75rem 1.25rem
   }
 
   .get-to-know-us, .card-1 .card-text, .card-2 .card-text {

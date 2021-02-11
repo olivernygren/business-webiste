@@ -204,3 +204,155 @@ header b {
 } */
 
 /* #endregion */
+
+@media (min-width: 1500px) {
+  .p4-landing-page-content {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 1175px) {
+  .p4-landing-page-content img {
+    width: 15rem;
+  }
+
+  .p4-dark .image img, .p4-light .image img {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 1010px) {
+
+  .p4-landing-page-content {
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
+  }
+
+  .p4-landing-page-content img {
+    display: none;
+  }
+
+  .p4-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .p4-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p4-card {
+    margin: 2rem 0;
+    width: 70%;
+  }
+
+  .p4-dark .container, .p4-light .container {
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding: 5rem 4rem 4rem 4rem;
+  }
+
+  .p4-dark .text {
+    padding-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .p4-light .text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .p4-light .image img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .p4-landing-page-content {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .p4-card {
+    width: 90%;
+  }
+  
+  .p4-cards {
+    padding: 5rem 3rem;
+  }
+
+  .p4-landing-page-content h1 {
+    font-size: 2.75rem;
+    display: inline-block;
+    word-wrap: break-all;
+    line-height: unset;
+  }
+
+  .p4-dark .container {
+    padding: 4rem 3rem 3rem 3rem;
+  } 
+
+  .p4-light .container {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .p4-landing-page {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .p4-landing-page-content {
+    padding: 4rem 0rem 1rem 0;
+  }
+
+  .p4-landing-page-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .p4-light .border-btn, .p4-dark .border-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .p4-card {
+    width: 100%;
+    margin: 1.25rem 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .p4-landing-page {
+    padding: 4rem 3rem 1rem 3rem;
+  }
+  
+  .p4-landing-page-content {
+    padding: 2.5rem 0;
+  }
+  
+  .p4-landing-page-content h1 {
+    font-size: 2.75rem;
+    line-height: unset;
+  }
+
+  .h2-2nd {
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.25rem;
+  }
+
+  .p4-light .container, .p4-dark .container {
+    padding: 4rem 2rem;
+  }
+}
+
+/* #endregion */

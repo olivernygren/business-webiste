@@ -76,6 +76,7 @@ header b {
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
+  flex-wrap: wrap;
 }
 
 .p1-cards .dark {
@@ -132,6 +133,8 @@ header b {
 .p1-dark .text h3 {
   font-size: 2rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .p1-dark .text h5 {
@@ -172,6 +175,8 @@ header b {
 .p1-light .text h3 {
   font-size: 2rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .p1-light .text h5 {
@@ -200,6 +205,146 @@ header b {
 .big-button-section {
   margin-bottom: 6rem;
   background: var(--clr-light-grey);
+  padding: 0 2rem;
+}
+
+/* #endregion */
+
+/* #region media queries */
+
+@media (min-width: 1500px) {
+  .p1-landing-page-content {
+    padding: 6rem 0;
+  }
+}
+
+@media (max-width: 1175px) {
+  .p1-landing-page-content img {
+    width: 15rem;
+  }
+
+  .p1-dark .image img, .p1-light .image img {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 1010px) {
+
+  .p1-landing-page-content {
+    text-align: center;
+    justify-content: center;
+    padding: 7rem 0;
+  }
+
+  .p1-landing-page-content img {
+    display: none;
+  }
+
+  .p1-card {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .p1-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .p1-card {
+    margin: 2rem 0;
+    width: 70%;
+  }
+
+  .p1-dark .container, .p1-light .container {
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    padding: 5rem 4rem 4rem 4rem;
+  }
+
+  .p1-dark .text {
+    padding-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  .p1-light .text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .p1-light .image img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .p1-landing-page-content {
+    padding: 4rem 0;
+  }
+
+  .p1-card {
+    width: 90%;
+  }
+
+  .p1-landing-page-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .p1-dark .container {
+    padding: 4rem 3rem 3rem 3rem;
+  } 
+
+  .p1-light .container {
+    padding: 4rem 3rem 4rem 3rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .p1-landing-page {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .p1-light .border-btn, .p1-dark .border-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .p1-card {
+    width: 100%;
+    margin: 1.25rem 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .p1-landing-page {
+    padding: 4rem 3rem 1rem 3rem;
+  }
+  
+  .p1-landing-page-content {
+    padding: 2.5rem 0;
+  }
+  
+  .p1-landing-page-content h1 {
+    font-size: 2.75rem;
+    line-height: unset;
+  }
+
+  .h2-2nd {
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.25rem;
+  }
+
+  .p1-light .container, .p1-dark .container {
+    padding: 4rem 2rem;
+  }
 }
 
 /* #endregion */
