@@ -657,6 +657,7 @@ footer p {
 @media (max-width: 610px) {
   .landing-page {
     padding: 5rem 2rem;
+    background-attachment: unset;
   }
 
   .nav-container {
