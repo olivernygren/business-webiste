@@ -374,6 +374,12 @@ main h2 b {
 
 /* #region get to know us */
 
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .get-to-know-us {
   width: 90%;
   max-width: 1200px;
@@ -394,13 +400,13 @@ main h2 b {
 }
 
 .get-to-know-us-text img {
-  width: 8rem;
-  margin: 1rem 0;
+  width: 3rem;
+  margin: 0 1.5rem;
 }
 
 .get-to-know-us-text h3 {
   margin-block-start: 0;
-  margin-block-end: 0.5rem;
+  margin-block-end: 0;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
