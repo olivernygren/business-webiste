@@ -221,6 +221,12 @@ header b {
 
 /* #region media queries */
 
+@media (min-width: 1500px) {
+  .p5-landing-page-content {
+    padding: 6rem 0 10rem 0;
+  }
+}
+
 @media (max-width: 1000px) {
   .p5-landing-page-content img {
     width: 16rem;

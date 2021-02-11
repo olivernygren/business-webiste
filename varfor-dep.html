@@ -10,10 +10,13 @@
   <!-- Poppins Font --> <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/varfor-dep.css">
+  <!-- gsap Animations --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <!-- gsap Scroll Trigger --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
   <script src=https://kit.fontawesome.com/369fccfd9c.js crossorigin="anonymous"></script>
   <script defer src="./script/header-handler.js"></script>
   <script defer src="./script/mobile-menu-close.js"></script>
   <script defer src="./script/hamburger-menu.js"></script>
+  <script defer src="./script/animations.js"></script>
   <title>Varför bör du välja D.E & P?</title>
 </head>
 <body>
@@ -63,7 +66,6 @@
       
     </div>
   </div>
-      
 
   <div class="p1-cards">
     <div class="p1-card">
@@ -82,14 +84,14 @@
 
   <section class="p1-dark">
     <div class="container">
-      <div class="text">
+      <div class="text p1-anim-1">
         <h3>Här ligger en rubrik</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <h5>Här ligger en underrubrik</h5>
         <p class="bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <a href="#" class="border-btn">Hitta Drömjobbet</a>
       </div>
-      <div class="image">
+      <div class="image p1-anim-1">
         <img src="./Illustrations/p1-second.svg" alt="Illustration">
       </div>
     </div>
@@ -97,10 +99,10 @@
 
   <section class="p1-light">
     <div class="container">
-      <div class="image">
+      <div class="image p1-anim-2">
         <img src="./Illustrations/p1-third.svg" alt="Illustration">
       </div>
-      <div class="text">
+      <div class="text p1-anim-2">
         <h3>Här ligger en rubrik</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <h5>Här ligger en underrubrik</h5>
@@ -111,8 +113,8 @@
   </section>
 
   <div class="big-button-section">
-    <h2 class="h2-2nd">Fortfarande inte övertygad?</h2>
-    <h4 class="sub-header">Hör av dig så hjälper vi <b>dig!</b></h4>
+    <h2 class="h2-2nd p1-anim-3">Fortfarande inte övertygad?</h2>
+    <h4 class="sub-header p1-anim-3">Hör av dig så hjälper vi <b>dig!</b></h4>
     <a href="#" class="big-btn">Kontakta Oss</a>
   </div>
 

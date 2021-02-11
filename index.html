@@ -9,9 +9,12 @@
   <!-- Poppins Font --> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Poppins Font --> <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
+  <!-- gsap Animations --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <!-- gsap Scroll Trigger --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
   <script defer src="./script/header-handler.js"></script>
   <script defer src="./script/mobile-menu-close.js"></script>
   <script defer src="./script/hamburger-menu.js"></script>
+  <script defer src="./script/animations.js"></script>
   <title>D.E & P - Rekrytering och Bemanning</title>
 </head>
 
@@ -72,21 +75,21 @@
   <main>
       
 
-    <h2>SE HUR VI KAN HJÄLPA <b>DIG</b> </h2>
+    <h2 class="anim-1">SE HUR VI KAN HJÄLPA <b>DIG</b> </h2>
 
-    <div class="card card-1">
+    <div class="card card-1 anim-1">
       <div class="card-text">
         <h3>Hitta nästa drömjobb</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore est culpa odio vitae optio soluta molestias sit ipsa. Repudiandae, natus? Numquam, consequatur laborum?</p>
         <a href="./hitta-dromjobbet.html" class="border-btn">Läs Mer</a>
       </div>
-      <div class="card-image">
+      <div class="card-image anim-1">
         <img src="./Images/image-1.jpg" alt="Picture of a laptop and a plant in an office">
       </div>
     </div>
 
-    <div class="card card-2">
-      <div class="card-image">
+    <div class="card card-2 anim-2">
+      <div class="card-image anim-2">
         <img src="./Images/image-2.jpg" alt="Picture of a screen and a keyboard on a desk">
       </div>
       <div class="card-text">
@@ -96,23 +99,23 @@
       </div>
     </div>
 
-    <div class="get-to-know-us">
+    <div class="get-to-know-us anim-3">
       <div class="get-to-know-us-text">
         <div class="heading">
           <h3>Lär känna oss</h3> 
-          <img src="./Logos/logo-symbol.svg" alt="Logo"> 
+          <img src="./Logos/logo-symbol.svg" alt="Logo" class="anim-3"> 
         </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita hic, itaque iste numquam ipsam non accusantium? Vel at ea consectetur cumque iure. Assumenda nobis, qui exercitationem iusto commodi distinctio adipisci!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita hic, itaque iste numquam ipsam non accusantium? Vel at ea consectetur cumque iure. Assumenda nobis, qui exercitationem iusto commodi distinctio adipisci!</p>
       </div>
-      <div class="get-to-know-us-btn">
+      <div class="get-to-know-us-btn anim-3">
         <a href="./om-oss.html" class="white-btn">Läs Mer</a>
       </div>
     </div>
 
     <div class="big-button-section">
-      <h2 class="h2-2nd">Söker du jobb eller medarbetare?</h2>
-      <h4 class="sub-header">Vi hjälper dig <b>hitta rätt!</b></h4>
+      <h2 class="h2-2nd anim-4">Söker du jobb eller medarbetare?</h2>
+      <h4 class="sub-header anim-4">Vi hjälper dig <b>hitta rätt!</b></h4>
       <a href="./kontakt.html" class="big-btn">Kom Igång</a>
     </div>
   </main>

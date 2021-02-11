@@ -9,10 +9,13 @@
   <!-- Poppins Font --> <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/om-oss.css">
+  <!-- gsap Animations --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <!-- gsap Scroll Trigger --> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
   <script src=https://kit.fontawesome.com/369fccfd9c.js crossorigin="anonymous"></script>
   <script defer src="./script/header-handler.js"></script>
   <script defer src="./script/mobile-menu-close.js"></script>
   <script defer src="./script/hamburger-menu.js"></script>
+  <script defer src="./script/animations.js"></script>
   <title>Om Oss | D.E & P</title>
 </head>
 <body>
@@ -65,14 +68,14 @@
 
   <section class="p4-dark">
     <div class="container">
-      <div class="text">
+      <div class="text p4-anim-1">
         <h3>Här ligger en rubrik</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <h5>Här ligger en underrubrik</h5>
         <p class="bottom">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <a href="#" class="border-btn">Kontakta Oss</a>
       </div>
-      <div class="image">
+      <div class="image p4-anim-1">
         <img src="./Illustrations/p4-second.svg" alt="Illustration">
       </div>
     </div>
@@ -81,10 +84,10 @@
   
   <section class="p4-light">
     <div class="container">
-      <div class="image">
+      <div class="image p4-anim-2">
         <img src="./Illustrations/p4-third.svg" alt="Illustration">
       </div>
-      <div class="text">
+      <div class="text p4-anim-2">
         <h3>Här ligger en rubrik</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque adipisci dolor dolorum accusantium maiores mollitia! Minima officia corrupti voluptas vero omnis explicabo, iure ipsam excepturi fugiat dolorem, ab modi et.</p>
         <h5>Här ligger en underrubrik</h5>
@@ -95,15 +98,15 @@
   </section>
 
   <div class="p4-cards">
-    <div class="p4-card">
+    <div class="p4-card p4-card-anim-3">
       <h3>Vi är <b>Engagerade</b> <i class="far fa-check-circle"></i></h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint architecto asperiores autem corporis explicabo veritatis vero nulla itaque eveniet aliquam, atque libero! Ad tenetur porro fuga amet perspiciatis pariatur quod!</p>
     </div>
-    <div class="p4-card dark">
+    <div class="p4-card dark p4-card-anim-3">
       <h3>Vi är <b>Seriösa</b> <i class="far fa-check-circle"></i></h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint architecto asperiores autem corporis explicabo veritatis vero nulla itaque eveniet aliquam, atque libero! Ad tenetur porro fuga amet perspiciatis pariatur quod!</p>
     </div>
-    <div class="p4-card">
+    <div class="p4-card p4-card-anim-3">
       <h3>Vi är <b>Professionella</b> <i class="far fa-check-circle"></i></h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint architecto asperiores autem corporis explicabo veritatis vero nulla itaque eveniet aliquam, atque libero! Ad tenetur porro fuga amet perspiciatis pariatur quod!</p>
     </div>
