@@ -109,13 +109,13 @@ header b {
 
 /* #endregion */
 
-/* #region p1 cards */
+/* #region p4 cards */
 
 .p4-cards {
   background: var(--clr-light-grey);
   display: flex;
   justify-content: space-around;
-  max-width: 1200px;
+  max-width: 1400px;
   text-align: center;
   margin: 0 auto;
   padding: 7rem 3rem;
@@ -197,11 +197,6 @@ header b {
 /* #endregion */
 
 /* #region last cta */
-
-/* .big-button-section {
-  margin-bottom: 6rem;
-  background: var(--clr-light-grey);
-} */
 
 /* #endregion */
 
