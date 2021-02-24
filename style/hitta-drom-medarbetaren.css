@@ -115,6 +115,12 @@ header b {
   background: var(--clr-white);
 }
 
+.p2-light ul {
+  direction: rtl;
+  margin-bottom: 3rem;
+  padding-inline-start: 0;
+}
+
 .p2-light .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -122,6 +128,7 @@ header b {
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .p2-light .text {
