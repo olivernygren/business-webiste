@@ -184,16 +184,14 @@ nav a {
 
 .landing-page {
   height: fit-content;
+  background: linear-gradient(0deg, rgba(220,220,220,1) 0%, rgba(255,255,255,1) 100%);
   background-image: url(../Images/background-with-text.png);
   background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-color: var(--clr-white);
   background-attachment: fixed;
+  background-color: var(--clr-white);
   padding: 5rem;
-  
-  /* width: 100vw;
-  margin: 0; */
 }
 
 .landing-page-content h1 {
@@ -293,7 +291,7 @@ main h2 b {
 }
 
 .card h3 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   margin: 0;
   /* white-space: nowrap; */
@@ -381,6 +379,7 @@ main h2 b {
 
 .get-to-know-us-text {
   margin-bottom: 2rem;
+  line-height: 1.75rem;
 }
 
 .get-to-know-us-text img {
@@ -524,6 +523,30 @@ footer li {
 }
 
 /* #endregion */
+
+.p1-dark .text, 
+.p2-dark .text, 
+.p3-dark .text, 
+.p4-dark .text, 
+.p5-dark .text,
+.p1-light .text, 
+.p2-light .text, 
+.p3-light .text, 
+.p4-light .text {
+  line-height: 1.75rem;
+}
+
+.p1-dark .text .bottom, 
+.p2-dark .text .bottom, 
+.p3-dark .text .bottom, 
+.p4-dark .text .bottom, 
+.p5-dark .text .bottom, 
+.p1-light .text .bottom,
+.p2-light .text .bottom, 
+.p3-light .text .bottom, 
+.p4-light .text .bottom {
+  margin-block-start: 1.5rem; 
+}
 
 /* FIRST PAGE MEDIA QUERIES */
 
