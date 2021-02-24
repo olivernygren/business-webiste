@@ -319,6 +319,38 @@ header b {
     width: 100%;
     margin: 1.25rem 0;
   }
+
+  .p1-landing-page-content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .p1-landing-page-content h4 {
+    font-size: .9rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: .85rem;
+  }
+
+  .p1-dark .text h3, .p1-light .text h3 {
+    font-size: 1.75rem;
+  }
+
+  .border-btn {
+    font-size: .85rem;
+    padding: .5rem 1.1rem;
+  }
+
+  .h2-2nd {
+    margin-top: 3.5rem;
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 410px) {

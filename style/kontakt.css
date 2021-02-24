@@ -129,6 +129,10 @@ header b {
   margin: .5rem 0;
 }
 
+.p5-dark .text ul {
+  margin: 2.5rem 0;
+}
+
 /* #endregion */
 
 /* #region last cta */
@@ -188,10 +192,46 @@ header b {
   }
 }
 
+@media (max-width: 440px) {
+  .p5-landing-page-content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  .p5-landing-page-content h4 {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: .85rem;
+  }
+
+  .p5-dark .text h3, .p5-light .text h3 {
+    font-size: 1.75rem;
+  }
+
+  .border-btn {
+    font-size: .85rem;
+    padding: .5rem 1.1rem;
+  }
+
+  .h2-2nd {
+    margin-top: 3.5rem;
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 400px) {
   .p5-dark .image img {
     width: 16rem;
   }
 }
+
 
 /* #endregion */

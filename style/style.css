@@ -742,15 +742,54 @@ footer li {
 
 @media (max-width: 510px) {
   .landing-page-content h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .landing-page-buttons {
     margin-top: 2rem;
   }
+  
+  .landing-page-content {
+    padding: 1.25rem 0 0 0;
+  }
 
   .landing-page {
     padding: 5rem 2rem 3rem 2rem
+  }
+
+  .orange-btn, .black-btn {
+    font-size: .8rem;
+    padding: 0.8rem 1.3rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  main {
+    padding: 3rem 1rem 5rem 1rem;
+  }
+
+  .card-1 .card-text, .card-2 .card-text {
+    padding: 3rem 1.75rem;
+  }
+
+  .card p, .get-to-know-us-text p {
+    font-size: .85rem;
+  }
+
+  .get-to-know-us {
+    padding: 3rem 1.75rem;
+  }
+
+  .h2-2nd {
+    margin-top: 3.5rem;
+    font-size: 2rem;
+  }
+
+  .sub-header {
+    font-size: 1.6rem;
   }
 }
 
